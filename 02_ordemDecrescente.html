@@ -5,10 +5,35 @@
     */
 
     //ENTRADA
+    const num1 = Number (prompt(`Informe um número`));
+    const num2= Number (prompt(`Informe outro número`));
+    const num3 = Number (prompt(`Informe outro número`));
 
-    
-    //PROCESSAMENTO
-    
-    //SAÍDA
-    
+    if (isNaN (num1) || isNaN (num2) || isNaN (num3) ){
+        alert (`Informe apenas números`)
+    }
+    else if (num1 === num2 || num1=== num3 || num2 === num3){
+        alert(`Algum dos valores são igauis, informe números diferentes`);
+ }
+ else if (num1 > num2 > num3){
+    alert (`Os numeros em ordem decrescente são: ${num1}, ${num2}, ${num3}`);
+ }
+ else if (num1 > num3 && num2 > num3){
+    alert(`Os números em ordem decrescente são:${num1}, ${num3}, ${num2}`);
+ }
+ else if (num2 > num1 && num3 > num2){
+    alert (`Os números em ordem decrescente são: ${num2}, ${num1}, ${num3}`);
+ }
+ else if (num2 > num1 && num3 > num1){
+    alert(`Os números em ordem  decrescente são: ${num2}, ${num3}, ${num1}`)
+ }
+ else if (num3 > num1 && num1 > num2){
+    alert (`Os números em ordem decrescente são: ${num3}, ${num1}, ${num2}`);
+ }
+ else if (num3 > num2 && num2 > num1){
+    alert (`Os números em ordem decrescente são: ${num3}, ${num2}, ${num3}`);
+ }
+
+
 </script>
+
