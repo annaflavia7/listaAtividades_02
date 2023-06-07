@@ -5,12 +5,18 @@
     */
 
     //ENTRADA
-
-    
+    const numero = Number(prompt(`Infome um número inteiro`));
     //PROCESSAMENTO
-    
-    
+    if (isNaN(numero)) {
+        alert(`Voce não informou um número`)
+    }
+    else if (numero % 2 === 0 || numero % 2 === -0) {
+        alert(`Par`)
+    }
+    else if (numero % 2 === 1|| numero % 2=== -1) {
+        alert(`Impar`)
+    }
     //SAÍDA
-    
-    
+
+
 </script>

@@ -12,9 +12,21 @@
     */
 
     //ENTRADA
-
+    const turno =  (prompt(`Qual turno voce estuda? Responda M para matutino ou V para vespertino ou N para noturno`)).trim().toUpperCase()
     
     //PROCESSAMENTO
+    if (turno === "M"){
+        alert(`Bom dia`)
+    }
+    else if (turno == "V"){
+        alert(`Boa tarde`)
+    }
+    else if (turno == "N"){
+        alert(`Boa noite`)
+    }
+    else {
+        alert(`Valor invalido`);
+    }
 
     
     //SAÍDA
