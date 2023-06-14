@@ -8,11 +8,26 @@
     // imc > 30: "Obeso"
 
     // Entrada
+    const massa = Number(prompt(`Qual sua massa corporal?`).replace(",", "."))
+    const altura = Number(prompt(`Qual a sua altura?`).replace(",", "."))
+    const imc = massa / (altura ** 2)
 
-    
     // Processamento
 
-    
+    if (imc <= 18.5){
+        alert("Subpeso"); 
+    }
+    else if (imc <= 25.0) {
+        alert("Normal")
+    }
+    else if (imc <= 30.0 && imc > 25.0) {
+        alert("Sobrepeso")
+    }
+    else if (imc <= 30) {
+        alert("Obeso")
+    }
+
+
     // Saída
 
 </script>
