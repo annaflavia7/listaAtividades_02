@@ -6,8 +6,21 @@
     */
 
     //ENTRADA
-    const hemisfério = prompt (`Em qual hemisfério você está? e em qual mês?`)
+    const hem = prompt(`Qual hemisfério você está? Resposnda com S= sul, N= Norte`).toUpperCase()
+    const mês = prompt(`Qual o mês que você está? responda com número`).toUpperCase()
 
-    
+    if (hem == "Sim"){
+        if (mês == 3 || mês == 3 || mês == 1 || mês == 1 || mês == 2 || mês == 2)
+        alert(`È verão!`)
+    }
+    else if (mês == 4 || mês == 4 || mês == 5 || mês == 5 || mês == 6 || mês == 6){
+        alert(`È outono!`)
+    }
+    else if (mês == 7 || mês == 7 || mês == 8 || mês == 8 || mês == 9 || mês == 9){
+        alert(`È inverno!`)
+    }
+    else if (mês == 10 || mês == 10 || mês == 11 || mês == 11 || mês == 12 || mês == 12){
+        alert(`È primavera!`)
+    }
     
     

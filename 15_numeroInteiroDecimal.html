@@ -6,12 +6,19 @@
     */
 
     //ENTRADA
-
+    const num = Number(prompt(`Informe um número`))
 
     //PROCESSAMENTO
+    if (Number.isInteger(num)) {
+        alert(`O numero ${num} é inteiro!`)
+    }
+    else if (Number.isInteger(num) == false) {
+        alert(`O numero ${num} é falso`)
+    }
+    else {
+        alert(`Invalido, tente novamente!`)
+    }
 
-    
     //SAÍDA
-
 
 </script>

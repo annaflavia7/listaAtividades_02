@@ -3,9 +3,15 @@
     // Recebe um ano e informa se ele é bissexto ou não.
 
     // Entrada
-    if 
+    const ano = Number(prompt(`Informe um ano`))
     
     // Processamento
+    if(ano / 4 == 0 && ano % 100 == 0){
+        alert (`${ano} bissexto!`)
+    }
+    else{
+        alert(`${ano} não é bissexto!`)
+    }
 
     // Saída
 
