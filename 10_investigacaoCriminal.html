@@ -11,11 +11,11 @@
     */
 
     //ENTRADA
-    const vítima = prompt(`Você telefonou para a vítima?`).toLocaleLowerCase
-    const crime = prompt(`Você esteve no local do crime?`).toLocaleLowerCase
-    const mora = prompt(`Você mora perto da vítima?`).toLocaleLowerCase
-    const devia = prompt(`Tu devia para a vítima?`).toLocaleLowerCase
-    const trabalhou = prompt(`Você ja trabalhou com a vitima?`)
+    const vítima = prompt(`Você telefonou para a vítima?`).toLowerCase().trim();
+    const crime = prompt(`Você esteve no local do crime?`).toLowerCase().trim();
+    const mora = prompt(`Você mora perto da vítima?`).toLowerCase().trim();
+    const devia = prompt(`Tu devia para a vítima?`).toLowerCase().trim();
+    const trabalhou = prompt(`Você ja trabalhou com a vitima?`)toLowerCase().trim();
     //PROCESSAMENTO
     let resposta = 0
     if (`vítima == "sim"`) {
